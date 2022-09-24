@@ -57,5 +57,8 @@
 	"mounts": [
 		// Re-use local Git configuration
 		"source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
-	  ]
+	  ],
+
+	// initate poetry shell  	
+	"postAttachCommand": "bash ./.devcontainer/post_attach.sh"
 }
